@@ -3,7 +3,7 @@ const matchList = document.getElementById('match-list')
 
 // search data.json and filter it
 const searchState = async searchText => {
-    const res = await fetch('./data/data.json');
+    const res = await fetch('data.json');
     const states = await res.json();
 
     let matches = states.filter(state => {
